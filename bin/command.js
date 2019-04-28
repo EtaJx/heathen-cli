@@ -1,15 +1,17 @@
 #!/usr/bin/env node
 "use strict"
 const program = require('commander');
-// const inquirer = require('inquirer');
 const path = require('path');
 const fs = require('fs');
 const allowFiles = ['md'];
 
 program
 .version('0.0.1')
-.option('-n, --new <file>', 'init')
+.option('-n, --new <file>', 'init an new article')
 .action((cmd) => {
+  if(!cmd.new) {
+    throw Error('miss arguments, plz checkout you command');
+  }
   const fileName = cmd.new.split('.')[0];
   const fileSuffix = cmd.new.split('.')[1];
   if(!allowFiles.includes(fileSuffix)) {

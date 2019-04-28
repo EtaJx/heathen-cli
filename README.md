@@ -1,6 +1,5 @@
-创建简单的文章模版，用于解析
+#### create a simple article header template, for parsing.
 
-```yaml
-title: [title]
-date: [date]
-```
+#### useage
+- `npm i heathen-cli --dev`
+- add command `heathen -n [articleName].md` to your package.json
