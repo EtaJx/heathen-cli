@@ -1,0 +1,13 @@
+{
+  "name": "heathen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "heathen": "bin/command.js"
+  },
+  "dependencies": {
+    "commander": "^2.20.0",
+    "inquirer": "^6.3.1"
+  }
+}
