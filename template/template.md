@@ -1,4 +1,0 @@
-```yaml
-title:
-date: 
-```
